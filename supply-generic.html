@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Supply Chain Performance Dashboard</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Custom styling for the two images side-by-side */
+			.image-row {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 20px;
+				margin: 20px 0;
+			}
+
+			.image-row img {
+				width: 48%;
+				border-radius: 10px;
+				object-fit: cover;
+			}
+
+			@media screen and (max-width: 768px) {
+				.image-row img {
+					width: 100%;
+				}
+			}
+		</style>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="title">Home</a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="supply-generic.html" class="active">Projects</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<h1 class="major">Supply Chain Performance Dashboard</h1>
+
+					<h3>Project Overview: The Business Problem</h3>
+					<p>
+						A major e-commerce client was experiencing inconsistent inventory levels and high logistics costs due to a lack of visibility into their supply chain. 
+						The objective was to consolidate disparate ERP data into a single source of truth and create a dynamic dashboard to monitor key performance indicators (KPIs).
+					</p>
+
+					<h3>🛠️ Tools & Methodology</h3>
+					<ul>
+						<li><strong>Data Extraction</strong> — <em>SQL (Microsoft SQL Server)</em>: Used complex JOINs and Window Functions to merge sales, warehouse, and logistics data.</li>
+						<li><strong>Data Cleaning & Preparation</strong> — <em>Excel & Power Query</em>: Handled date/text transformations, validated datasets with VLOOKUPs.</li>
+						<li><strong>Data Modeling</strong> — <em>Power BI (DAX)</em>: Implemented a Star Schema and custom DAX measures for Inventory Turnover Ratio and OTIF.</li>
+						<li><strong>Visualization</strong> — <em>Power BI</em>: Developed an interactive, multi-page report with drill-through and filtering capabilities.</li>
+					</ul>
+					<hr></hr>
+					<h3>🖼️ Results & Deliverables</h3>
+					<p>Below are two dashboard views showcasing different insights from the project.</p>
+
+					<!-- Two side-by-side images -->
+					<div class="image-row">
+						<img src="images/pic06.jpg" alt="Supply Chain Dashboard - Overview" />
+						<img src="images/pic06.jpg" alt="Supply Chain Dashboard - Logistics Insights" />
+					</div>
+
+					<hr></hr>
+					<h3>✅ Key Findings & Business Impact</h3>
+					<ul>
+						<li><strong>Insight 1 (Quantitative):</strong> A $1.2 million annual variance in shipping costs was found, mainly from delayed deliveries requiring premium carriers.</li>
+						<li><strong>Insight 2 (Actionable):</strong> Warehouses with OTIF scores below 85% showed higher shipping cost variance. Recommendation: Implement targeted training for those four facilities.</li>
+					</ul>
+
+					<p><strong>Skill Demonstrated:</strong> Leveraged DAX Time Intelligence to calculate Month-over-Month variance, enabling early detection of cost inefficiencies.</p>
+					<hr></hr>
+					<h3>🔗 Project Source</h3>
+					<ul>
+						<li><strong>View the Code (GitHub):</strong> <a href="#" target="_blank">[Link to project folder]</a></li>
+						<li><strong>Interact with the Report (Power BI):</strong> <a href="#" target="_blank">[Link to live Power BI report]</a></li>
+						<li><strong>Download Source Data:</strong> <a href="#" target="_blank">[Link to dataset]</a></li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" class="wrapper style1-alt" style="text-align: center;">
+			<div class="inner">
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-twitter" style="margin: 10px;"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-facebook-f" style="margin: 10px;"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-github" style="margin: 10px;"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram" style="margin: 10px;"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-linkedin-in" style="margin: 10px;"><span class="label">LinkedIn</span></a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
